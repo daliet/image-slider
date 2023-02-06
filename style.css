@@ -1,0 +1,94 @@
+* {box-sizing:border-box}
+
+h1 {
+  text-align: center;
+}
+
+.slideshow-container {
+  width: 100%;
+  max-width:1000px;
+  position: relative;
+  margin: auto;
+}
+
+.img-container {
+  display: none;
+}
+
+.img-number {
+  position: absolute;
+  margin-top: .25rem;
+  margin-left: .5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:#000;  
+}
+
+button {
+  border: none;
+  outline: none;
+  height: 2rem;
+  width: 2.5rem;
+  opacity:.5;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  background-color: #bbb;
+}
+
+button:hover {
+  transition: background-color 300ms ease-in-out;
+  background-color: #999;
+}
+
+.previous, .next {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: #000;
+}
+
+.next {
+  right: 0;
+}
+
+.anime-name {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: -2.5rem;
+  font-size: 2rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.navigation-dots {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  height: .75rem;
+  width: .75rem;
+  margin: .1rem;
+  background-color: #bbb;
+  transition: background-color 600ms ease;
+  border-radius: 50%;
+}
+
+.dot:hover {
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+  background-color: #777;
+}
+
+
+.img-container {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
